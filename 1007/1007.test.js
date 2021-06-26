@@ -1,5 +1,4 @@
-
-
+const diferencaProduto = require('./diferencaProduto')
 
 const valores = {
 
@@ -22,8 +21,8 @@ const valores = {
 
 it('Deve retornar a diferença entre dois produtos', () => {
 
-    expect((valores.v1 * valores.v2) - (valores.v3 * valores.v4)).toBe(valores.r1)
-    expect((valores.v5 * valores.v6) - (valores.v7 * valores.v8)).toBe(valores.r2)
-    expect((valores.v9 * valores.v10) - (valores.v11 * valores.v12)).toBe(valores.r3)
+    expect(diferencaProduto(valores.v1, valores.v2, valores.v3, valores.v4)).toBe(valores.r1)
+    expect(diferencaProduto(valores.v5, valores.v6, valores.v7, valores.v8)).toBe(valores.r2)
+    expect(diferencaProduto(valores.v9, valores.v10, valores.v11, valores.v12)).toBe(valores.r3)
 
 });
